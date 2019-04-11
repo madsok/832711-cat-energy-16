@@ -1,0 +1,19 @@
+.button {
+  /*width: 280px;
+  display: block;
+  position: relative;
+  z-index: 1; */
+  font-family: @font-family-base;
+  text-decoration: none;
+  color: @color-h-button;
+    &::before {
+      width: inherit;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top:0;
+      left: 0;
+      background-color: @color-button;
+    }
+}

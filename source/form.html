@@ -8,21 +8,23 @@
   <body>
 
     <header class="header">
-      <ul class="header-list">
-        <li class="header-list__item">
-          <a class="header-list__link" href="index.html">
-            <img class="logo-img" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
-          </a>
-        </li>
-        <li class="header-list__item">
-          <button class="site-nav__button" type="button">Открыть меню</button>
-        </li>
-      </ul>
+      <div class="header-logo header__header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img class="logo-img" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
+        </a>
+        <button class="header-logo__button" type="button">Открыть меню</button>
+      </div>
       <nav class="site-nav">
         <ul class="site-nav__list nav-list">
-          <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="form.html">Подбор программы</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="site-nav__item"><a class="site-nav__link nav-list__link--active" href="form.html">Подбор программы</a></li>
+          <li class="site-nav__item site-nav__item--prog">
+            <ul class="nav-sublist">
+              <li class="nav-sublist__item"><a class="nav-sublist__link nav-sublist__link--big" href="form.html">Подбор программы</a></li>
+              <li class="nav-sublist__item"><a class="nav-sublist__link nav-sublist__link--small" href="form.html">Заполните анкету и мы подберем программу питания для вашего кота</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,7 +39,7 @@
           <img class="logo-img" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
         </a>
       </div>
-      <section class="social-buttons">
+      <section class="social-buttons footer__social-buttons">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-buttons__list social-list">
           <li class="social-list__item">
@@ -63,9 +65,12 @@
           </li>
         </ul>
       </section>
-      <div class="academy-logo">
+      <div class="academy-logo footer__academy-logo">
         <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy-logo__link-img" src="img/footer-logo.png" width="123" height="123" alt="Логотип HTML Academy">
+          HTML Academy
+        </a>
+        <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="academy-logo__img" src="img/footer-logo.png" width="123" height="123" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
