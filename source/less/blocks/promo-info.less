@@ -1,4 +1,10 @@
+.promo-info {
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
 .promo-info__heading {
+  .clear__indent();
   font-family: @font-family-base;
   font-size: @font-size-h2;
   font-weight: normal;
@@ -19,6 +25,7 @@
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: @color-h-button;
 }
 
@@ -27,7 +34,6 @@
   display: block;
   position: relative;
   z-index: 1; */
-  font-family: @font-family-base;
   font-size: @font-size-text;
   font-weight: normal;
   font-style: normal;
@@ -35,16 +41,6 @@
   line-height: 1.29;
   letter-spacing: normal;
   text-align: center;
-  color: @color-h-button;
-    &::before {
-      width: inherit;
-      height: 100%;
-      display: block;
-      position: absolute;
-      z-index: -1;
-      content: "";
-      top:0;
-      left: 0;
-      background-color: @color-button;
-    }
+  text-transform: uppercase;
+  text-decoration: none;
 }

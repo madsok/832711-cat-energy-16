@@ -8,16 +8,17 @@
   <body>
 
     <header class="header">
-      <a class="header__link">
-        <img class="header__link-img-logo" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
-        <img class="header__link-img-heading" src="img/logo-heading.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
-      </a>
+      <div class="header-logo header__header-logo">
+        <a class="header-logo__link" href="index.html">
+          <img class="logo-img" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
+        </a>
+        <button class="header-logo__button" type="button">Открыть меню</button>
+      </div>
       <nav class="site-nav">
-        <button class="site-nav__button" type="button">Открыть меню</button>
-        <ul class="site-nav__list nav-list">
-          <li class="nav-list__item"><a class="nav-list__link" href="index.html">Главная</a></li>
-          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="catalog.html">Каталог продукции</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="form.html">Подбор программы</a></li>
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог продукции</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -55,6 +56,7 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
           <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy pro 1000 г</h2>
@@ -85,8 +87,9 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
-          <li>
+          <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy pro 500 г</h2>
             <table class="stats">
                 <tr>
@@ -115,6 +118,7 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
           <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy pro 1000 г</h2>
@@ -145,6 +149,7 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
           <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy slim 500 г</h2>
@@ -175,6 +180,7 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
           <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy slim 1000 г</h2>
@@ -205,6 +211,7 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
           </li>
           <li class="cards-list__item">
             <h2 class="cards-list__heading">Cat energy slim 500 г</h2>
@@ -235,6 +242,23 @@
                 </tr>
             </table>
             <img class="cards-list__item-img" src="img/product.svg" width="123" height="123" alt="Корм Кэт энерджи">
+            <a class="button cards-list__item--button" href="#">Заказать</a>
+          </li>
+          <li class="cards-list__item cards-list__item--more">
+            <ul class="cards-more">
+              <li class="cards-more__item">
+                <button class="cards-more__button" type="button">+</button>
+              </li>
+              <li class="cards-more__item">
+                <span class="cards-more__heading">Показать еще 100500 товаров</span>
+              </li>
+              <li class="cards-more__item">
+                <span class="cards-more__subheading">На самом деле вкусов еще гораздо больше</span>
+              </li>
+              <li class="cards-more__item">
+                <a class="button button--more" href="#">Показать все</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -242,12 +266,12 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-logo">
+      <div class="footer-logo footer__footer-logo">
         <a class="footer-logo__link">
-          <img class="index-header__link-img-heading" src="img/logo-heading.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
+          <img class="logo-img" src="img/logo.svg" width="123" height="123" alt="Логотип магазина Кэт энерджи">
         </a>
       </div>
-      <section class="social-buttons">
+      <section class="social-buttons footer__social-buttons">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social-buttons__list social-list">
           <li class="social-list__item">
@@ -278,9 +302,12 @@
           </li>
         </ul>
       </section>
-      <div class="academy-logo">
+      <div class="academy-logo footer__academy-logo">
         <a class="academy-logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="academy-logo__link-img" src="img/footer-logo.png" width="123" height="123" alt="Логотип магазина Кэт энерджи">
+          HTML Academy
+        </a>
+        <a class="academy-logo__link-img" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="academy-logo__img" src="img/footer-logo.png" width="123" height="123" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

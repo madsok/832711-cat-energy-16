@@ -1,8 +1,19 @@
-.nav-list__item {
-  list-style: none;
+.site-nav__list {
+  .clear__indent();
 }
 
-.nav-list__link {
+.site-nav__item {
+  list-style: none;
+  .border__block();
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.site-nav__item--prog {
+  .clear__indent();
+}
+
+.site-nav__link {
   font-family: @font-family-sup;
   font-size: @font-size-menu;
   font-weight: 500;
@@ -12,5 +23,6 @@
   letter-spacing: normal;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: @color-h-base;
 }
