@@ -1,11 +1,23 @@
 .cards-list {
+  display: flex;
+  flex-direction: column;
   .clear__indent();
 }
 
 .cards-list__item {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
   padding: 25px 18px 25px 20px;
+  list-style: none;
   .border__block();
+}
+
+.card__wrapper {
+  display: flex;
+}
+
+.cards-list__item-img {
+  order: -1;
 }
 
 .cards-list__item--more {

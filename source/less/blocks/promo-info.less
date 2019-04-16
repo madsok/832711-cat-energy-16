@@ -59,14 +59,17 @@
 
 @media (min-width: @desktop-width) {
   .promo-info {
+    position: relative;
+    z-index: -1;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     margin-top: -120px;
     margin-left: 600px;
   }
   .promo-info__wrapper {
+    position: absolute;
     width: 600px;
-    margin-left: -600px;
-    margin-top: 115px;
+    top: 115px;
+    left: -600px;
   }
 }
