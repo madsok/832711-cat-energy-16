@@ -1,3 +1,16 @@
 .header__header-logo {
+  display: flex;
   padding: 10px 20px 15px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__wrapper {
+    justify-content: space-between;
+  }
 }

@@ -1,20 +1,37 @@
 .index-main__promo-info {
+  display: flex;
+  flex-direction: column;
   padding: 28px 20px 0 20px;
   margin-bottom: 22px;
+
+  min-height: 495px;
 }
 
 .index-main__thin-article {
+  display: flex;
+  flex-direction: column;
   padding: 22px 35px 20px 20px;
   margin-bottom: 20px;
 }
 
 .index-main__athletic-article {
+  display: flex;
+  flex-direction: column;
   padding: 24px 52px 20px 20px;
   margin-bottom: 30px;
 }
 
 .index-main__advantages {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 27px;
   margin-bottom: 42px;
+}
+
+@media (min-width: @desktop-width) {
+  .article__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -44,3 +44,29 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: @tablet-width) {
+  .promo-info {
+    background-image: none;
+  }
+  .promo-info__heading {
+    color: @color-h-base;
+  }
+  .promo-info__subheading {
+    color: @color-h-base;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-info {
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    margin-top: -120px;
+    margin-left: 600px;
+  }
+  .promo-info__wrapper {
+    width: 600px;
+    margin-left: -600px;
+    margin-top: 115px;
+  }
+}
