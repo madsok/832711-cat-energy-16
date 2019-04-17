@@ -37,3 +37,13 @@
   color: @color-h-base;
   .clear__indent();
 }
+
+@media (min-width: @tablet-width) {
+  .cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cards-list__item {
+    flex-grow: 1;
+  }
+}

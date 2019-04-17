@@ -1,3 +1,8 @@
+.catalog-cards__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .catalog-cards__heading {
   font-family: @font-family-base;
   font-size: @font-size-h2;
@@ -10,4 +15,15 @@
   color: @color-h-base;
   .border__block();
   .clear__indent();
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-cards__wrapper {
+    width: 768px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog-cards__wrapper {
+    width: 1300px;
+  }
 }

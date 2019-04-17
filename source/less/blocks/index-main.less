@@ -1,3 +1,8 @@
+.index-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .index-main__promo-info {
   display: flex;
   flex-direction: column;
@@ -29,7 +34,16 @@
   margin-bottom: 42px;
 }
 
+@media (min-width: @tablet-width) {
+  .index-main__wrapper {
+    width: 768px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .index-main__wrapper {
+    width: 1300px;
+  }
   .article__wrapper {
     display: flex;
     flex-direction: row;
