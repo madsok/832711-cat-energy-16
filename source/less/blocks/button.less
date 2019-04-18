@@ -1,22 +1,12 @@
 .button {
   /*Временно для ДЗ*/
-  width: 280px;
+  width: 200px;
   display: block;
-  position: relative;
   z-index: 1;
+  background-color: @color-button;
 
   font-family: @font-family-base;
+  text-align: center;
   text-decoration: none;
   color: @color-h-button;
-
-  &::before {
-    width: inherit;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: @color-button;
-  }
 }
