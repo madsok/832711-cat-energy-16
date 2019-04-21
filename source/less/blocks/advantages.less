@@ -12,12 +12,12 @@
 }
 
 .advantages__list {
-  display: flex;
-  flex-direction: column;
   .clear__indent();
 }
 
 .advantages__item {
+  margin-bottom: 20px;
+
   font-family: @font-family-text;
   font-size: @font-size-text;
   font-weight: normal;
@@ -32,6 +32,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages__list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     /*Временно для ДЗ*/
