@@ -1,5 +1,5 @@
 .promo-info {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -30,10 +30,6 @@
 }
 
 .promo-info__button {
-  /*width: 280px;
-  display: block;
-  position: relative;
-  z-index: 1; */
   font-size: @font-size-text;
   font-weight: normal;
   font-style: normal;
@@ -43,4 +39,28 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-info {
+    background-image: none;
+  }
+
+  .promo-info__heading {
+    color: @color-h-base;
+  }
+
+  .promo-info__subheading {
+    color: @color-h-base;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-info {
+    background-image: none;
+  }
+
+  .promo-info__wrapper {
+    width: 50%;
+  }
 }
