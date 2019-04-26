@@ -1,0 +1,21 @@
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-wrapper {
+    justify-content: space-between;
+    width: 1300px;
+  }
+}

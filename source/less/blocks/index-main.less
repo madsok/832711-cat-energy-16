@@ -1,6 +1,15 @@
+.index-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .index-main__promo-info {
+  display: flex;
+  flex-direction: column;
   padding: 28px 20px 0 20px;
   margin-bottom: 22px;
+
+  min-height: 495px;
 }
 
 .index-main__thin-article {
@@ -14,7 +23,33 @@
 }
 
 .index-main__advantages {
+  display: flex;
+  flex-direction: column;
   padding-left: 20px;
   padding-right: 27px;
   margin-bottom: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .index-main__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .index-main__wrapper {
+    width: 1300px;
+  }
+
+  .index-main__promo-info {
+    margin-bottom: 200px;
+  }
+
+  .index-main__thin-article {
+    width: 570px;
+  }
+
+  .index-main__athletic-article {
+    width: 570px;
+  }
 }
