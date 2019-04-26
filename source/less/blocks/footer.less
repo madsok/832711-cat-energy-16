@@ -2,14 +2,28 @@
   background-color: @card-color;
 }
 
-.footer__footer-logo {
-  padding: 39px 96px 31px 96px;
+.footer__container {
+  width: 320px;
+  margin: 0 auto;
 }
 
-.footer__social-buttons {
-  padding: 22px 102px 21px 96px;
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__academy-logo {
-  padding: 22px 20px 22px 20px;
+@media (min-width: @tablet-width) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__container {
+    display: flex;
+    width: 1300px;
+  }
 }

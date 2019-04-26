@@ -1,4 +1,6 @@
 .site-nav__list {
+  display: flex;
+  flex-direction: column;
   .clear__indent();
 }
 
@@ -25,4 +27,27 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @color-h-base;
+}
+
+@media (min-width: @tablet-width) {
+  .site-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-nav__item {
+    padding-left: 20px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-nav__link--white {
+    color: @color-h-button;
+  }
+
+  .site-nav__item {
+    padding: 70px 40px 20px 20px;
+    border: none;
+  }
 }

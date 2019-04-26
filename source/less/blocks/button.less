@@ -1,20 +1,24 @@
 .button {
-  /*width: 280px;
+  /*Временно для ДЗ*/
+  width: 200px;
   display: block;
-  position: relative;
-  z-index: 1; */
+  z-index: 1;
+  background-color: @color-button;
+
   font-family: @font-family-base;
+  text-align: center;
   text-decoration: none;
   color: @color-h-button;
+}
 
-  &::before {
-    width: inherit;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: @color-button;
-  }
+.button--more {
+  font-family: @font-family-base;
+  font-size: @font-size-text-h;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: @color-text;
 }
