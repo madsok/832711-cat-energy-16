@@ -10,6 +10,15 @@
   text-align: center;
   text-decoration: none;
   color: @color-h-button;
+    &:hover {
+      background-color: @color-button-hover;
+    }
+    &:active {
+      background-color: @color-button-hover;
+    }
+    &:active > span {
+      opacity: 0.3;
+    }
 }
 
 .button--more {
