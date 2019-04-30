@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+
+        <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/preview/cat-energy-index-mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/preview/cat-energy-index-tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1200px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/preview/cat-energy-catalog-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
+
     <meta charset="utf-8">
     <title>Магазин еды для кошек: "Кэт энерджи"</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -34,10 +62,10 @@
           <h2 class="promo-info__heading">Функциональное питание для котов</h2>
           <span class="promo-info__subheading">Занялся собой? Займись котом!</span>
           <img class="promo-info__popular" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Популярный товар">
-          <a class="button promo-info__button" href="form.html"><span>Подобрать программу</span></a>
+          <a class="button button--promo" href="form.html"><span>Подобрать программу</span></a>
         </section>
         <div class="article-wrapper">
-          <article class="thin-article index-main__thin-article">
+          <article class="thin-article article-wrapper__thin-article">
             <h3 class="thin-article__heading">Похудение</h3>
             <p class="thin-article__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
@@ -45,7 +73,7 @@
             </p>
             <a class="thin-article__link" href="#">Каталог slim</a>
           </article>
-          <article class="athletic-article index-main__athletic-article">
+          <article class="athletic-article article-wrapper__athletic-article">
             <h3 class="athletic-article__heading">Набор массы</h3>
             <p class="athletic-article__text">
               Заработать авторитет среди дворовых котов и даже собак?

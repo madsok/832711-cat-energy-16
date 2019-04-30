@@ -7,7 +7,12 @@
   background-color: @color-button;
 
   font-family: @font-family-base;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
   color: @color-h-button;
     &:hover {
@@ -19,6 +24,15 @@
     &:active > span {
       opacity: 0.3;
     }
+}
+
+.button--promo {
+  font-size: @font-size-text;
+  line-height: 1.29;
+}
+
+.cards-list__item--button {
+  font-size: @font-size-text-h;
 }
 
 .button--more {

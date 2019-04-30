@@ -8,13 +8,13 @@
   .clear__indent();
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-left: 68px;
-  margin-bottom: 24px;
+  padding-left: 70px;
+  margin-bottom: 22px;
     &::before {
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: 1px;
       width: 50px;
       height: 50px;
       border-radius: 50px;
@@ -34,15 +34,15 @@
 
 .athletic-article__text {
   position: relative;
+  width: 201px;
   .article__text();
   .clear__indent();
-  width: 201px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
     &::after {
       position: absolute;
       content: "";
-      left: 20px;
-      bottom: -20px;
+      left: 0;
+      bottom: -23px;
       width: 240px;
       height: 1px;
       background-color: @article-line-color;
@@ -60,5 +60,17 @@
       width: 25px;
       height: 12px;
       background-image: url("../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
     }
+    &:active {
+      opacity: 0.3;
+    }
+}
+
+.athletic-article__link:hover::after {
+  right: -46px;
+  width: 34px;
+  height: 12px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
 }

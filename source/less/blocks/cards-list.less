@@ -7,7 +7,8 @@
 .cards-list__item {
   display: flex;
   flex-direction: column;
-  padding: 25px 18px 25px 20px;
+  padding: 0 18px 25px 20px;
+  margin-top: -1px;
   list-style: none;
   .border__block();
 }
@@ -25,6 +26,10 @@
 }
 
 .cards-list__heading {
+  width: 75px;
+  .clear__indent();
+  padding-top: 21px;
+  padding-bottom: 11px;
   font-family: @font-family-base;
   font-size: @font-size-text-h;
   font-weight: normal;
@@ -35,7 +40,6 @@
   text-align: left;
   text-transform: uppercase;
   color: @color-h-base;
-  .clear__indent();
 }
 
 @media (min-width: @tablet-width) {
