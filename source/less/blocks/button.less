@@ -45,4 +45,22 @@
   letter-spacing: normal;
   text-align: center;
   color: @color-text;
+  background-color: @card-color;
+    &:hover {
+      background-color: @button-more-hover-color;
+    }
+    &:active {
+      background-color: @button-more-hover-color;
+    }
+    &:active > span {
+      opacity: 0.3;
+    }
 }
+
+@media (min-width: @tablet-width) {
+  .button--promo {
+    width: 245px;
+    margin-left: 42px;
+    font-size: @font-size-menu;
+    }
+  }
