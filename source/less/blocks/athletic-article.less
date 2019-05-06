@@ -74,3 +74,52 @@
   background-image: url("../img/icon-right-arrow-verylong.svg");
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .athletic-article__heading {
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 19px;
+    font-size: @font-size-h2;
+    line-height: 1.03;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 395px;
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      background-color: @color-button;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 60px;
+      left: 360px;
+      width: 268px;
+      height: 113px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .athletic-article__text {
+    width: 340px;
+    margin-bottom: 53px;
+    font-size: @font-size-text-h;
+    line-height: 1.5;
+    &::after {
+      display: none;
+    }
+  }
+
+  .athletic-article__link {
+    font-size: @font-size-menu;
+    line-height: 1;
+      &::after {
+        top: 10px;
+        right: -47px;
+      }
+  }
+}
