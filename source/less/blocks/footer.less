@@ -4,8 +4,6 @@
 
 .footer__container {
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -51,8 +49,20 @@
 @media (min-width: @tablet-width) {
   .footer__container {
     display: flex;
-    justify-content: center;
-    width: 768px;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .footer-logo::before {
+    display: none;
+  }
+
+  .footer__social-buttons::before {
+    display: none;
+  }
+
+  .footer__academy-logo {
+    width: 160px;
   }
 }
 

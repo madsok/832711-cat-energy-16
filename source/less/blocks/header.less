@@ -1,8 +1,37 @@
 .header__header-logo {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 18px 10px 20px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #ededed;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #ededed;
+    }
+}
+
+@media (min-width: @tablet-width) {
+  .header__header-logo::after {
+    display: none;
+  }
+  .header__header-logo::before {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
