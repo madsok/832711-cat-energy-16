@@ -31,3 +31,29 @@ tr {
   text-align: left;
   color: @color-text;
 }
+
+@media (min-width: @tablet-width) {
+  .stats {
+    width: 252px;
+  }
+
+  tr {
+    position: relative;
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #cdcdcd;
+      &:last-child {
+        margin-bottom: 38px;
+      }
+  }
+
+  .stats__name {
+    font-size: @font-size-text-h;
+    line-height: 1;
+  }
+
+  .stats__value {
+    font-size: @font-size-text-h;
+    line-height: 1;
+  }
+}

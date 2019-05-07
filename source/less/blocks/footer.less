@@ -12,20 +12,6 @@
   padding-bottom: 31px;
 }
 
-.footer-logo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 1px;
-      bottom: 0;
-      background-color: @article-line-color;
-    }
-}
-
 .footer__social-buttons {
   position: relative;
   padding-top: 22px;
@@ -53,16 +39,25 @@
     width: 708px;
   }
 
-  .footer-logo::before {
-    display: none;
+  .footer__footer-logo {
+    width: 162px;
+    padding-top: 64px;
+    padding-bottom: 62px;
   }
 
-  .footer__social-buttons::before {
-    display: none;
+  .footer__social-buttons {
+    width: 324px;
+    padding-right: 18px;
+    padding-bottom: 24px;
+    &::before {
+      display: none;
+    }
   }
 
   .footer__academy-logo {
-    width: 160px;
+    width: 165px;
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 }
 
