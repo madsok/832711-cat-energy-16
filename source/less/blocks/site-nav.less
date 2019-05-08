@@ -11,24 +11,26 @@
   list-style: none;
   padding-top: 24px;
   padding-bottom: 20px;
-    &::before{
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #ededed;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      right: 50%;
-      bottom: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #ededed;
-    }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
 }
 
 .site-nav__link {
@@ -63,12 +65,14 @@
     padding-left: 20px;
     margin-right: 15px;
     border: none;
-      &::after {
-        display: none;
-      }
-      &::before {
-        display: none;
-      }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 
   .site-nav__link {
@@ -83,15 +87,16 @@
 
   .site-nav__link--active {
     position: relative;
-      &::before {
-        position: absolute;
-        content: "";
-        bottom: -8px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: @color-h-button;
-      }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: @color-button;
+    }
   }
 }
 
@@ -105,16 +110,45 @@
     border: none;
   }
 
-  .site-nav__link--active-green {
+  .site-nav__link--active {
     position: relative;
-      &::before {
-        position: absolute;
-        content: "";
-        bottom: -8px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: @color-button;
-      }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: @color-h-button;
+    }
+  }
+
+  .catalog .site-nav__link--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: @color-button;
+    }
+  }
+
+  .form .site-nav__link--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: @color-button;
+    }
   }
 }

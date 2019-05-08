@@ -5,30 +5,33 @@
   align-items: center;
   padding-top: 12px;
   padding-bottom: 10px;
-    &::before{
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #ededed;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      right: 50%;
-      bottom: 0;
-      width: 100vw;
-      height: 1px;
-      background-color: #ededed;
-    }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: #ededed;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .header__header-logo::after {
     display: none;
   }
+
   .header__header-logo::before {
     display: none;
   }

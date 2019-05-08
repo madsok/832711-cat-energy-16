@@ -42,9 +42,10 @@ tr {
     padding-bottom: 7px;
     margin-bottom: 6px;
     border-bottom: 1px solid #cdcdcd;
-      &:last-child {
-        margin-bottom: 38px;
-      }
+
+    &:last-child {
+      margin-bottom: 38px;
+    }
   }
 
   .stats__name {
@@ -55,5 +56,11 @@ tr {
   .stats__value {
     font-size: @font-size-text-h;
     line-height: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats {
+    width: 171px;
   }
 }
