@@ -124,3 +124,37 @@
       }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .thin-article__heading {
+    padding-top: 35px;
+    padding-left: 22px;
+    margin-bottom: 70px;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: @color-button;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 14px;
+      width: 71px;
+      height: 97px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .thin-article__text {
+    width: 465px;
+    margin-bottom: 30px;
+  }
+}
