@@ -1,4 +1,6 @@
 .advantages__heading {
+  .clear__indent();
+  margin-bottom: 15px;
   font-family: @font-family-base;
   font-size: @font-size-h2;
   font-weight: normal;
@@ -8,7 +10,6 @@
   letter-spacing: normal;
   text-align: left;
   color: @color-h-base;
-  .clear__indent();
 }
 
 .advantages__list {
@@ -16,7 +17,9 @@
 }
 
 .advantages__item {
-  margin-bottom: 20px;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 25px;
 
   font-family: @font-family-text;
   font-size: @font-size-text;
@@ -30,26 +33,200 @@
   list-style: none;
 }
 
+.advantages__text {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: -1px;
+    left: -80px;
+    background-color: @color-button;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+.advantages__item--leaf .advantages__text::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 2px;
+  left: -75px;
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.advantages__item--powder .advantages__text::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 2px;
+  left: -75px;
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.advantages__item--dining .advantages__text::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 4px;
+  left: -74px;
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.advantages__item--clock .advantages__text::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  left: -75px;
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
 @media (min-width: @tablet-width) {
+  .advantages__heading {
+    margin-bottom: 72px;
+    font-size: @font-size-h2-tablet;
+    line-height: 1;
+  }
+
   .advantages__list {
+    width: 708px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    /*Временно для ДЗ*/
-    width: 618px;
   }
 
   .advantages__item {
-    /*Временно для ДЗ*/
-    width: 230px;
-    padding-bottom: 20px;
+    width: 324px;
+    padding-top: 97px;
+    padding-left: 0;
+    margin-bottom: 115px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .advantages__text {
+    width: 245px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 80px;
+      top: -112px;
+      left: 0;
+      background-color: @color-button;
+    }
+
+    br {
+      display: inline;
+    }
+  }
+
+  .advantages__item--leaf::before {
+    position: absolute;
+    content: "1";
+    top: -40px;
+    left: 118px;
+    font-family: @font-family-base;
+    font-size: 282px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__item--leaf .advantages__text::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: 16px;
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  .advantages__item--powder::before {
+    position: absolute;
+    content: "2";
+    top: -40px;
+    left: 112px;
+    font-family: @font-family-base;
+    font-size: 282px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__item--powder .advantages__text::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: 16px;
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  .advantages__item--dining::before {
+    position: absolute;
+    content: "3";
+    top: -36px;
+    left: 112px;
+    font-family: @font-family-base;
+    font-size: 282px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__item--dining .advantages__text::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: 16px;
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  .advantages__item--clock::before {
+    position: absolute;
+    content: "4";
+    top: -36px;
+    left: 115px;
+    font-family: @font-family-base;
+    font-size: 282px;
+    line-height: 1;
+    color: #f2f2f2;
+  }
+
+  .advantages__item--clock .advantages__text::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -100px;
+    left: 16px;
+    background-image: url("../img/advantage-clock@1x.png");
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__list {
+    width: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+
+  .advantages__item {
+    width: 246px;
   }
 }

@@ -1,10 +1,22 @@
-.header-logo {
-  .border__block();
+.header-logo__link {
+  text-decoration: none;
 }
 
-.header-logo__link {
-  margin-right: 65px;
-  text-decoration: none;
+.header-logo__link:hover {
+  opacity: 0.8;
+}
+
+.header-logo__link:active {
+  opacity: 0.6;
+}
+
+.header-logo__button {
+  display: none;
+  width: 19px;
+  height: 19px;
+  .clear__indent();
+  border: none;
+  background: url("../img/icon-close.svg") no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -12,7 +24,8 @@
     display: none;
   }
 
-  .header-logo {
-    border: none;
+  .header-logo__img {
+    width: 174px;
+    height: 59px;
   }
 }

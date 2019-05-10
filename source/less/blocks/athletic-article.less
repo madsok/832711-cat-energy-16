@@ -3,15 +3,168 @@
 }
 
 .athletic-article__heading {
+  position: relative;
   .article__heading();
   .clear__indent();
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 70px;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: @color-button;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -8px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .athletic-article__text {
+  position: relative;
+  width: 201px;
   .article__text();
   .clear__indent();
+  margin-bottom: 41px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -23px;
+    width: 240px;
+    height: 1px;
+    background-color: @article-line-color;
+  }
 }
 
 .athletic-article__link {
+  position: relative;
   .article__link();
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: -37px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.athletic-article__link:hover::after {
+  right: -46px;
+  width: 34px;
+  height: 12px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .athletic-article__heading {
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 19px;
+    font-size: @font-size-h2;
+    line-height: 1.03;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 395px;
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      background-color: @color-button;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 60px;
+      left: 360px;
+      width: 268px;
+      height: 113px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .athletic-article__text {
+    width: 340px;
+    margin-bottom: 53px;
+    font-size: @font-size-text-h;
+    line-height: 1.5;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .athletic-article__link {
+    font-size: @font-size-menu;
+    line-height: 1;
+
+    &::after {
+      top: 10px;
+      right: -47px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .athletic-article__heading {
+    padding-top: 35px;
+    padding-left: 62px;
+    margin-bottom: 70px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      background-color: @color-button;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 28px;
+      left: -18px;
+      width: 134px;
+      height: 57px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .athletic-article__text {
+    width: 445px;
+    margin-bottom: 30px;
+  }
 }

@@ -1,11 +1,24 @@
 .cards-more {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  align-items: center;
   .clear__indent();
 }
 
+.cards-more__button {
+  width: 31px;
+  height: 31px;
+  .clear__indent();
+  margin-bottom: 21px;
+  border: none;
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+  opacity: 0.2;
+}
+
+
 .cards-more__heading {
+  margin-bottom: 10px;
+
   font-family: @font-family-base;
   font-size: @font-size-text-h;
   font-weight: normal;
@@ -19,6 +32,8 @@
 }
 
 .cards-more__subheading {
+  margin-bottom: 20px;
+
   font-family: @font-family-text;
   font-size: @font-size-subtext;
   font-weight: normal;
@@ -28,4 +43,27 @@
   letter-spacing: normal;
   text-align: center;
   color: @color-text;
+}
+
+@media (min-width: @tablet-width) {
+  .cards-more__button {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 45px;
+    background: url("../img/icon-plus.svg") no-repeat;
+  }
+
+  .cards-more__heading {
+    width: 140px;
+    margin-bottom: 30px;
+    font-size: @font-size-menu;
+    line-height: 1;
+  }
+
+  .cards-more__subheading {
+    width: 175px;
+    margin-bottom: 85px;
+    font-size: @font-size-text-h;
+    line-height: normal;
+  }
 }

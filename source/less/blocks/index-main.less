@@ -5,44 +5,47 @@
 
 .index-main__promo-info {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 28px 20px 0 20px;
+  padding-top: 28px;
   margin-bottom: 22px;
-
-  min-height: 495px;
-}
-
-.index-main__thin-article {
-  padding: 22px 35px 20px 20px;
-  margin-bottom: 20px;
-}
-
-.index-main__athletic-article {
-  padding: 24px 52px 20px 20px;
-  margin-bottom: 30px;
 }
 
 .index-main__advantages {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 27px;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 42px;
 }
 
 @media (min-width: @tablet-width) {
   .index-main__wrapper {
-    width: 768px;
+    width: 708px;
+  }
+
+  .index-main__promo-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 55px 30px 500px 50px;
+    margin-bottom: 30px;
+  }
+
+  .index-main__advantages {
+    width: inherit;
   }
 }
 
 @media (min-width: @desktop-width) {
   .index-main__wrapper {
-    width: 1300px;
+    width: 1220px;
   }
 
   .index-main__promo-info {
-    margin-bottom: 200px;
+    padding: 0;
+    padding-top: 102px;
+    margin-bottom: 270px;
   }
 
   .index-main__thin-article {

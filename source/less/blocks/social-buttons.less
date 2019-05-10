@@ -6,9 +6,76 @@
 
 .social-buttons__list {
   display: flex;
+  justify-content: space-between;
+  width: 125px;
   .clear__indent();
 }
 
-.social-list__item {
+.social-buttons__item {
   list-style: none;
+}
+
+.social-buttons__vk-img {
+  width: 22px;
+  height: 12px;
+
+  &:hover path {
+    fill: @color-button;
+  }
+
+  &:active path {
+    fill: @color-button;
+    opacity: 0.3;
+  }
+}
+
+.social-buttons__instagram-img {
+  width: 17px;
+  height: 17px;
+
+  &:hover .st0 {
+    fill: @color-button;
+  }
+
+  &:active .st0 {
+    fill: @color-button;
+    opacity: 0.3;
+  }
+}
+
+.social-buttons__facebook-img {
+  width: 10px;
+  height: 19px;
+
+  &:hover path {
+    fill: @color-button;
+  }
+
+  &:active path {
+    fill: @color-button;
+    opacity: 0.3;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .social-buttons__list {
+    width: 124px;
+    align-items: center;
+  }
+
+  .social-buttons__vk-img {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-buttons__instagram-img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-buttons__facebook-img {
+    width: 14px;
+    height: 28px;
+  }
 }
