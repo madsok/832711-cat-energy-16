@@ -230,3 +230,25 @@
     width: 246px;
   }
 }
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .advantages__item--leaf .advantages__text::after {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 100% auto;
+  }
+
+  .advantages__item--powder .advantages__text::after {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 100% auto;
+  }
+
+  .advantages__item--dining .advantages__text::after {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 100% auto;
+  }
+
+  .advantages__item--clock .advantages__text::after {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 100% auto;
+  }
+}
