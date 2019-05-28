@@ -1,0 +1,167 @@
+.contacts-info {
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: #f2f2f2;
+  }
+}
+
+.index-body .contacts-info {
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.catalog .contacts-info,
+.form .contacts-info {
+  background-color: #f2f2f2;
+}
+
+.contacts-info__wrapper {
+  display: flex;
+}
+
+.contacts-info__heading {
+  width: 140px;
+  padding-right: 0;
+  margin: 0;
+
+  font-family: @font-family-base;
+  font-size: @font-size-text-h;
+  line-height: 1.25;
+
+  text-transform: uppercase;
+}
+
+.contacts-info__address {
+  width: 140px;
+  margin: 0;
+
+  font-family: @font-family-text;
+  font-size: @font-size-text;
+  line-height: 1.43;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-info {
+    padding: 65px 40px;
+    padding-bottom: 60px;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      background-color: #f2f2f2;
+    }
+
+    &::after {
+      content: "";
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      background-color: #f2f2f2;
+    }
+  }
+
+  .contacts-info__wrapper {
+    justify-content: space-between;
+  }
+
+  .contacts-info__heading {
+    width: 155px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts-info__address {
+    width: 155px;
+
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts-info__address span {
+    display: block;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-info {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 2;
+
+    padding: 0;
+
+    background-color: #ffffff;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .contacts-info__wrapper {
+    justify-content: space-between;
+    width: 570px;
+    padding-top: 64px;
+    padding-bottom: 54px;
+
+    background-color: #ffffff;
+  }
+
+  .contacts-info__heading {
+    width: 236px;
+    padding-left: 76px;
+  }
+
+  .contacts-info__address {
+    width: 195px;
+    padding-right: 48px;
+
+    text-align: left;
+  }
+}

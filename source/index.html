@@ -68,9 +68,9 @@
     </header>
 
     <main class="index-main">
-      <div class="index-main__wrapper">
-        <h1 class="visually-hidden">Магазин еды для котиков: "Кэт энерджи"</h1>
-        <section class="promo-info index-main__promo-info">
+      <h1 class="visually-hidden">Магазин еды для котиков: "Кэт энерджи"</h1>
+      <section class="promo-info index-main__promo-info">
+        <div class="promo-info__wrapper">
           <h2 class="promo-info__heading">Функциональное питание для котов</h2>
           <span class="promo-info__subheading">Занялся собой? Займись котом!</span>
           <picture>
@@ -83,7 +83,9 @@
             <img class="promo-info__popular" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Популярный товар">
           </picture>
           <a class="button button--promo" href="form.html"><span>Подобрать программу</span></a>
-        </section>
+        </div>
+      </section>
+      <div class="index-main__wrapper">
         <div class="article-wrapper">
           <article class="thin-article article-wrapper__thin-article">
             <h3 class="thin-article__heading">Похудение</h3>
@@ -118,6 +120,87 @@
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему </br> вашего питомца!</p>
             </li>
           </ul>
+        </section>
+      </div>
+      <section class="example">
+        <div class="example-heading__container">
+          <h2 class="example__heading">Живой пример</h2>
+        </div>
+        <div class="example__wrapper">
+          <div class="example-info-container  example__wrapper-container">
+            <section class="example__info">
+              <p class="example__text">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок!
+                При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <dl class="example__list">
+                <div class="example__list-container">
+                  <dt class="example__term">5 кг</dt>
+                  <dd class="example__descr">снижение веса</dd>
+                </div>
+                <div class="example__list-container">
+                  <dt class="example__term">60 дней</dt>
+                  <dd class="example__descr">затрачено времени</dd>
+                </div>
+              </dl>
+              <dl class="example__sum">
+                <dt class="example__sum-cost">Затраты на питание: </dt>
+                <dd class="example__sum-value">15 000 руб.</dd>
+              </dl>
+            </section>
+            <section class="example__cats">
+              <div class="example__cats-container">
+                <div class="example__cats-wrapper  example__cats-wrapper--before  example__cats-wrapper--active">
+                  <picture>
+                    <source media="(min-width: 1300px)" type="image/webp" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                    <img class="example__cats-img  example__cats-img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот">
+                  </picture>
+                </div>
+                <div class="example__cats-wrapper  example__cats-wrapper--after">
+                  <picture>
+                    <source media="(min-width: 1300px)" type="image/webp" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" type="image/webp" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                    <img class="example__cats-img  example__cats-img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот">
+                  </picture>
+                </div>
+              </div>
+              <div class="example__cats-range-wrapper">
+                <button class="example__cats-range-btn  example__cats-range-btn--before">
+                  <span>Было</span>
+                </button>
+                <div class="example__cats-range">
+                  <input class="visually-hidden  example__cats-range-toggle" id="cats-range" type="range" min="1" max="2" step="1" value="0">
+                  <label class="example__cats-range-label  example__cats-range-label--before" for="cats-range"></label>
+                </div>
+                <button class="example__cats-range-btn  example__cats-range-btn--after">
+                  <span>Стало</span>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <div class="contacts-wrapper">
+        <div class="contacts-container  contacts-wrapper__container">
+          <section class="contacts-info">
+            <div class="contacts-info__wrapper">
+              <h2 class="contacts-info__heading">Приглашаем<br>к сотрудничеству дилеров!</h2>
+              <p class="contacts-info__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            </div>
+          </section>
+        </div>
+        <section class="map">
+          <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558942540657!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
       </div>
     </main>
