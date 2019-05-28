@@ -1,6 +1,6 @@
 .advantages__heading {
   .clear__indent();
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-family: @font-family-base;
   font-size: @font-size-h2;
   font-weight: normal;
@@ -35,13 +35,14 @@
 
 .advantages__text {
   position: relative;
+  margin: 0;
 
   &::before {
     position: absolute;
     content: "";
     width: 60px;
     height: 60px;
-    top: -1px;
+    top: 0;
     left: -80px;
     background-color: @color-button;
   }
@@ -76,8 +77,8 @@
   content: "";
   width: 50px;
   height: 50px;
-  top: 4px;
-  left: -74px;
+  top: 5px;
+  left: -75px;
   background-image: url("../img/advantage-dining@1x.png");
 }
 
@@ -93,7 +94,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages__heading {
-    margin-bottom: 72px;
+    margin-bottom: 89px;
     font-size: @font-size-h2-tablet;
     line-height: 1;
   }
@@ -110,9 +111,17 @@
     width: 324px;
     padding-top: 97px;
     padding-left: 0;
-    margin-bottom: 115px;
+    margin-bottom: 147px;
     font-size: 16px;
     line-height: 1.5;
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 80px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 80px;
+    }
   }
 
   .advantages__text {
@@ -136,7 +145,7 @@
   .advantages__item--leaf::before {
     position: absolute;
     content: "1";
-    top: -40px;
+    top: -57px;
     left: 118px;
     font-family: @font-family-base;
     font-size: 282px;
@@ -157,7 +166,7 @@
   .advantages__item--powder::before {
     position: absolute;
     content: "2";
-    top: -40px;
+    top: -57px;
     left: 112px;
     font-family: @font-family-base;
     font-size: 282px;
@@ -178,7 +187,7 @@
   .advantages__item--dining::before {
     position: absolute;
     content: "3";
-    top: -36px;
+    top: -52px;
     left: 112px;
     font-family: @font-family-base;
     font-size: 282px;
@@ -199,7 +208,7 @@
   .advantages__item--clock::before {
     position: absolute;
     content: "4";
-    top: -36px;
+    top: -52px;
     left: 115px;
     font-family: @font-family-base;
     font-size: 282px;
@@ -228,6 +237,7 @@
 
   .advantages__item {
     width: 246px;
+    margin-bottom: 0;
   }
 }
 

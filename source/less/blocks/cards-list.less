@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 18px 25px 20px;
+  padding-bottom: 24px;
   list-style: none;
 
   &::before {
@@ -86,6 +86,14 @@
     &::before {
       display: none;
     }
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 25px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
   }
 
   .cards-list__link-img--small {
@@ -143,6 +151,14 @@
 
     &::before {
       display: none;
+    }
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 55px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 55px;
     }
   }
 
