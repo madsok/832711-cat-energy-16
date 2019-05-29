@@ -1,11 +1,14 @@
 .stats {
+  .clear__indent();
   width: 140px;
   border-spacing: 0;
+  list-style: none;
 }
 
-.stats tr {
+.stats li {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .stats__name {
@@ -37,10 +40,10 @@
     width: 252px;
   }
 
-  .stats tr {
+  .stats li {
     position: relative;
-    padding-bottom: 7px;
-    margin-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cdcdcd;
 
     &:last-child {

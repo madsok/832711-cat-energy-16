@@ -5,6 +5,11 @@
     <title>Каталог магазина еды для кошек: "Кэт энерджи"</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body class="catalog">
 
@@ -79,32 +84,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy pro 500 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           500 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Курица
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           700 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--small" href="#">
                   <picture class="cards-list__picture">
@@ -118,7 +123,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item">
               <div class="cards-list__wrapper">
@@ -126,32 +131,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy pro 1000 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           1000 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Курица
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           1000 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--big" href="#">
                   <picture class="cards-list__picture">
@@ -165,7 +170,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item">
               <div class="cards-list__wrapper">
@@ -173,37 +178,37 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy pro 500 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           500 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Рыба
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           700 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--small" href="#">
                   <picture class="cards-list__picture">
-                    <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp, img/fish-small-desktop@2x.webp 2x">
-                    <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp, img/fish-small-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp, img/fish-small-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp, img/fish-small-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/fish-small-mobile@1x.webp, img/fish-small-mobile@2x.webp 2x">
 
                     <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png, img/fish-small-desktop@2x.png 2x">
@@ -212,7 +217,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item">
               <div class="cards-list__wrapper">
@@ -220,32 +225,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy pro 1000 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           1000 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Рыба
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           1000 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--big" href="#">
                   <picture class="cards-list__picture">
@@ -259,7 +264,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item">
               <div class="cards-list__wrapper">
@@ -267,32 +272,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy slim 500 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           500 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Гречка
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           400 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--small" href="#">
                   <picture class="cards-list__picture">
@@ -306,7 +311,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item">
               <div class="cards-list__wrapper">
@@ -314,32 +319,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy slim 1000 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           1000 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Гречка
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           700 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--big" href="#">
                   <picture class="cards-list__picture">
@@ -353,7 +358,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item cards-list__item--penultimate">
               <div class="cards-list__wrapper">
@@ -361,32 +366,32 @@
                   <a class="cards-list__link-name" href="#">
                     <h2 class="cards-list__heading">Cat energy slim 500 г</h2>
                   </a>
-                  <table class="stats">
-                      <tr>
-                        <td class="stats__name">
+                  <ul class="stats">
+                      <li>
+                        <div class="stats__name">
                           Объем
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           500 г
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Вкус
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           Рис
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="stats__name">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="stats__name">
                           Цена
-                        </td>
-                        <td class="stats__value">
+                        </div>
+                        <div class="stats__value">
                           500 Р.
-                        </td>
-                      </tr>
-                  </table>
+                        </div>
+                      </li>
+                  </ul>
                 </div>
                 <a class="cards-list__link-img cards-list__link-img--small" href="#">
                   <picture class="cards-list__picture">
@@ -401,7 +406,7 @@
                   </picture>
                 </a>
               </div>
-              <a class="button cards-list__item--button" href="#">Заказать</a>
+              <a class="button cards-list__item--button" href="order.html">Заказать</a>
             </li>
             <li class="cards-list__item cards-list__item--more">
               <div class="cards-more">
@@ -427,7 +432,7 @@
                     <td class="add-goods__table-column-right">200 Р.</td>
                   </tr>
                 </table>
-                <a class="button  add-goods__link" href="#">Заказать</a>
+                <a class="button  add-goods__link" href="order.html">Заказать</a>
               </li>
               <li class="add-goods__item">
                 <h3 class="add-goods__subheading">Питьевая вода</h3>
@@ -437,7 +442,7 @@
                     <td class="add-goods__table-column-right">50 Р.</td>
                   </tr>
                 </table>
-                <a class="button  add-goods__link" href="#">Заказать</a>
+                <a class="button  add-goods__link" href="order.html">Заказать</a>
               </li>
               <li class="add-goods__item">
                 <h3 class="add-goods__subheading">Молоко</h3>
@@ -447,7 +452,7 @@
                     <td class="add-goods__table-column-right">100 Р.</td>
                   </tr>
                 </table>
-                <a class="button  add-goods__link" href="#">Заказать</a>
+                <a class="button  add-goods__link" href="order.html">Заказать</a>
               </li>
               <li class="add-goods__item">
                 <h3 class="add-goods__subheading">Витамины</h3>
@@ -457,7 +462,7 @@
                     <td class="add-goods__table-column-right">300 Р.</td>
                   </tr>
                 </table>
-                <a class="button  add-goods__link" href="#">Заказать</a>
+                <a class="button  add-goods__link" href="order.html">Заказать</a>
               </li>
             </ul>
 
@@ -480,7 +485,7 @@
         </div>
 
         <section class="map">
-          <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558942540657!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map__block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558942540657!5m2!1sru!2sru" style="border:0" allowfullscreen></iframe>
         </section>
       </div>
 
